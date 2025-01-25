@@ -1,4 +1,4 @@
-#import "../template.typ" : hw, ch
+#import "../hw/template.typ" : hw, ch
 #show: hw((1, 2, 3, 7, 11, 12, 13))
 #let M = " M"
 #let ml = " mL"
@@ -42,7 +42,7 @@
 
 
 
-#bibliography("works.bib", style: "american-chemical-society")
+#bibliography("HMWK1 works.bib", style: "american-chemical-society")
 
 
 
