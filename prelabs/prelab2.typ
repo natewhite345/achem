@@ -13,8 +13,9 @@
     + Cap the volumetric flask and invert 20 times to mix.
     + Using the P1000 micropipette, transfer 500 #math.mu;L from the volumetric flask into a new 25.0 mL volumetric flask. Using the DI water from Step 1, fill that volumetric flask to the mark, using a transfer pipette when approaching the mark to avoid overshooting.
     + Cap the volumetric flask and invert 20 times to mix.
-    + Three cuvettes should be prepared for UV-Vis by wiping the clear sides of the cuvette with a KimWipe and ensuring that only the frosted sides are touched from that point until retrieval from the UV-Vis machines.
-    + Use a transfer pipette to fill each cuvette with about 3 mL (3 cm) of solution.
+    + Four cuvettes should be prepared for UV-Vis by wiping the clear sides of the cuvette with a KimWipe and ensuring that only the frosted sides are touched from that point until retrieval from the UV-Vis machines.
+    + Fill a cuvette with DI water and use it as the blank to calibrate the UV-vis
+    + Use a transfer pipette to fill each remaining cuvette with about 3 mL (3 cm) of solution.
     + Use the UV-Vis machine to record the absorption for each cuvette at 503 nm.
 + $A_lambda=c epsilon_lambda l$\
     $A_(503" nm")=(2.00 times 10^3" ng/mL") (2.59 times 10^4" L" "mol"^(-1)" cm"^(-1))(1.0" cm")$\
