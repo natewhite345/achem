@@ -1,0 +1,1 @@
+#bibliography("project.bib", full: true, style: "american-chemical-society", title: "Introduction to Inductively-Coupled Plasma Mass-Spectrometry with a Focus on Metal Nanoparticles in Biological Systems")
