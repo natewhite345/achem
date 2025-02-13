@@ -11,4 +11,4 @@
 )
 + $N=M times n arrow.double M = N/n arrow.double M = (1.0007 "eq/L")/ (1 "eq/mol") = 1.0007" mol/L" = 1.0007" M"$
 + $0.1000" g NaCl" times "1 mol NaCl"/"58.443 g NaCl" times "1 mol AgNO3"/"1 mol NaCl" times "1 L AgNO3"/"0.1000 mol AgNO3" times "1000 mL"/"1 L" = 17.11$ mL AgNO#sub[3] should be close to the volume used to standardize the silver nitrate in part b. 
-+ $"28.0000 g pickle" times "280 mg Na"/"28 g pickle" times "1 g"/"1000 mg" times "1 mol Na"/"22.990 g Na" times "1 mol AgNO3"/"1 mol Na" times "1 L AgNO3"/"0.1000 mol AgNO3" times "1000 mL"/"1 L" = 121.8$ mL AgNO#sub[3] should be close to the volume used to titrate the pickle in part c.
++ $"28.0000 g pickle" times "280 mg Na"/"28 g pickle" times "1 g"/"1000 mg" times "1 mol Na"/"22.990 g Na" times "1 mol AgNO3"/"1 mol Na" times "1 L AgNO3"/"0.1000 mol AgNO3" times "1000 mL"/"1 L" times "20 mL"/ "100 mL"= 24.36$ mL AgNO#sub[3] should be close to the volume used to titrate the pickle in part c.
