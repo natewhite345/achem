@@ -13,11 +13,22 @@
 
 #assert.eq(repeat_str("0",5), "00000")
 
+// Number Integer -> String
+// Rounds a number, adding trailing zeros to ensure the correct number of decimal places.
 #let round(num, decimal_places) = {
   let naive = calc.round(num, digits: decimal_places)
-  let rightpad = repeat_str("0",decimal_places - str(naive).split(".").at(1).len()+1)
-  return str(naive)+rightpad
+  let pad_count = decimal_places
+  if(str(naive).split(".").len() > 1){ 
+    pad_count -= str(naive).split(".").at(1).len()
+  }
+  let rightpad = repeat_str("0",pad_count)
+  return str(naive)+ rightpad
 }
+
+#assert.eq(round(5.40300, 4), "5.4030")
+#assert.eq(round(5.432,3), "5.432")
+#assert.eq(round(5.15,1), "5.2")
+#assert.eq(round(0.189, 4), "0.1890")
 
 #let sigfigsadd = (nums) => calc.min(..nums.map((v) => v.split(".").at(1).len()))
 #let avg = (d) => d.map(float).sum()/d.len()
@@ -27,10 +38,11 @@
       (d.map(float).map(v => calc.pow(v - avg(d),2)).sum())/(d.len()-1)), 
     sigfigsadd(d))
 #let avg_computation = (d, units : math.frac("g","mL") ) => {
-    let res = str(round(d.map(decimal).sum()/d.len(), sigfigsadd(d)))
-    let rightpad = repeat_str("0",sigfigsadd(d)-str(res).split(".").at(1).len()+1)
-    return [Average: $overline(x)$ = #math.frac(math.sum + $x_i$, [N]) = #math.frac(d.map(v=> v+ units).join(" + "),[#d.len()]) = #res#rightpad #units]
+    let res = round(d.map(decimal).sum()/d.len(), sigfigsadd(d))
+    return [Average: $overline(x)$ = #math.frac(math.sum + $x_i$, [N]) = #math.frac(d.map(v=> v+ units).join(" + "),[#d.len()]) = #res #units]
   }
+#assert.eq(str(round(("5.40","5.38","5.42").map(decimal).sum()/3, sigfigsadd(("5.40","5.38","5.42")))), "5.40")
+
 #let stddev_computation = (d, units : math.frac("g","mL")) => {
     return [Standard Deviation: s = $sqrt(frac(sum (x_i-overline(x))^2, N-1 )) =$\ \ $sqrt(frac(#d.map(v => $(#v #units - #avg_r(d) #units)^2$).join("+"), 3-1 ))$ = #std_dev_r(d) #units]
   }
@@ -65,7 +77,7 @@
 #let scientificnotation = (num, figs) => {
   let decimal_actual = num.position(".")
   if(decimal_actual == none){
-    decimal_actual = num.len() -1
+    decimal_actual = num.len()
   }
   let numdigitsonly = num.split("").filter(v => v in range(0,9).map(str)).join()
   let firstsigfig = numdigitsonly.position(regex("[1-9]"))
@@ -77,6 +89,7 @@
 #assert.eq(scientificnotation("5.400",3), $5.40 times 10^0$)
 #assert.eq(scientificnotation("54.0", 2), $5.4 times 10^1$)
 #assert.eq(scientificnotation("0.0004506", 3), $4.51 times 10^#(-4)$)
+#assert.eq(scientificnotation("22",2), $2.2 times 10^1$)
 
 
 #let leadingzeros = (num) => {
@@ -107,7 +120,6 @@
 }
 
 #assert.eq(str(calc.round(decimal("3.100"), digits: 2)), "3.10")
-
 #assert.eq(roundsigfigs("0.09827", 3), "0.0983")
 #assert.eq(roundsigfigs("3.100", 3), "3.10")
 
