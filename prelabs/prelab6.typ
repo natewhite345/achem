@@ -62,10 +62,6 @@
 )
 + Fill out the vial column by loading the samples into the tray and noting which place number they are placed into. Leave the comments column blank.
 + Click ok and select the running man. 
-+ When the samples have finished, go to file and select the folder with the datafiles.
-+ Open each data file and select the area under the peak. 
-+ Confirm that the spectrogram of the fruits aligns with the spectrogram of the standard.
-+ Go to Chromatogram > Percent Report and record the corrected area for each data file.
 
 
 // note the time, write down the model specs, then also do 
