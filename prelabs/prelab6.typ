@@ -22,7 +22,8 @@
 + Using a P500, transfer two 500 #math.mu;L aliquots from the "orange" vial and one aliquot for lemon and grapefruit to the 10 mL volumetric flask with the same label. 
 + Using a transfer pipette, fill the volumetric flasks to the mark with methanol.
     == Preparation of Standard
- $ 97%*0.842 "g/mL" * (200#math.mu;"L")/ "25 mL" * (153#math.mu;"L") / "10 mL" = 100. #math.mu;"g/mL" $
+ $ 97%*0.842 "g/mL" * ((350#math.mu;"L")/ "10 mL")^2 = "1000 "mu"g/mL" $
+    $ 1000" "mu"g/mL" * (153#math.mu;"L") / "10 mL" = 100. #math.mu;"g/mL" $
 + Pour roughly 1 mL of (R)-(+)-Limonene (Sigma-Aldrich, catalog number 18316, 97% purity) into the 5 mL beaker labeled "Limonene".
 + Using a P200, transfer 200 #math.mu;L of the limonene from the beaker into an unlabeled 10 mL volumetric flask.
 + Fill the volumetric flask to the mark with methanol. 
