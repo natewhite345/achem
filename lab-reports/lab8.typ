@@ -18,4 +18,16 @@ Scan Rate 20 mV/s\
 + The data does not suggest that the reaction is reversible due to the peak cathode voltage being substantially larger than the peak anode voltage. The data does appear to diffusion controlled as the Randles-Sevcik plot is linear. 
 
 = Part B
-+ 
++ #image("lab8bcotrell.png")
++ 9.85 #math.times 10#super[-5] A/s#super[-1/2]
++ The y-intercept is -4.71 #math.times 10#super[-5] A, but the graph shows that this is basically 0 relative to the scale of the data and can be used a measure of uncertainty.
++ The plot is linear with a correlation coefficient of 0.994
++ $ "slope" = "nFAc"#math.sqrt("D") / #math.sqrt(math.pi) $
+  Our concentration is $ "0.0333 g" / "10 mL" times "1000 mL" / "1 L" times "1 mol" / "329.26 g" = 0.0101 "M"$
+  $ 9.85 times 10^(-5) A sqrt("s")= 1 times "96485 C/mol" times (pi times "1 mm"^2) times "0.0101 M" times #math.sqrt("D") / #math.sqrt(math.pi) $
+  $ D = ((9.85 times 10^(-5) A sqrt("s") times sqrt(pi)) / ("96485 C/mol" times (pi times "1 mm"^2) times "0.0101 M"))^2 $
+  $ = ((9.85 times sqrt(pi)) / (96485 times pi times 0.0101))^2 times 10^(-10) times ("A mol L" / ("C mm"^2 "mol"))^2 "s"   $
+  $ = 3.25 times 10^(-5) times 10^(-10) times 10^6 " m"^2"/s"   $
+  $ = 3.25 times 10^(-9) times 10^4 " cm"^2"/s"   $
+  $ = 3.25 times 10^(-5)" cm"^2"/s"   $
+  Our results do not agree well with the literature value.
