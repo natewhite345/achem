@@ -9,4 +9,7 @@ The potential for ferricyanide vs Ag/AgCl can be computed from literature as 360
 
 Our blank reading showed strong repeated evidence of contamination with observed peaks similar to our voltammograms for the wine sample, thus we did not subtract our blank for our data analysis. 
 
-https://docs.google.com/spreadsheets/d/10stXnoedHNH2xuzVSs6tJZiiTX57NDyTO8v6CKn_eck/edit?gid=301451791#gid=301451791
+= Conclusion
+1. Regardless of the choice of all features, just the reduction features, or just the oxidation features, the clustering cleanly appears around the lab group which conducted the analysis, not the color or country of the wine. These clusters have been circled and labeled with the intials of the lab group which contributed the sample. #image("lab9overall.png")#image("lab9oxidation.png")#image("lab9reduction.png")
+2. Our results are inconclusive. Clustering based on partner pair rather than the actual wine sample indicates the noise from instrumentation or operator error greatly outweighs the signal. We don't see in any of the observation plots the ability to neatly group data points based on color or country of origin. We also don't see the expected result of Rose between in between white wines and red wines; rather, we see that the same Rose analyzed by three different groups does not appear grouped together in any plot. 
+3. Both analyses were inconclusive, so no observations can be made. However, univariate analysis is generally more sensitive when there is an expected pattern, whereas multivariate analysis can identify unforseen patterns. 
